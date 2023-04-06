@@ -57,12 +57,14 @@ section{
   }
 
 .main-container{
-	position: relative;
-	margin-top: 100px;
+	width: 1400px;
+	height: 843px;
+	margin: 0 auto;
 }
 
 .tab-nav-bar{
 	position: relative;
+	padding-top: 30px;
 	margin: 65px 10px 40px 10px;
 }
 
@@ -235,7 +237,7 @@ section{
 	position: absolute;
 	left: 0;
 	top: 0;
-	height: 38%;
+	height: 48%;
 	width: 100%;
 	background-color: #40513B;
 	border-radius: 25px;
@@ -244,17 +246,17 @@ section{
 
 .member{
 	position: relative;
-	height: 80px;
+	height: 95px;
 	width: 90px;
 	border-radius: 50%;
 	padding: 5px;
 	
 }
 .member .card-img{
-	margin-left: 60px;
-	margin-top: 15px;
-	height: 95%;
-	width: 85%;
+	margin-left:60px;
+	margin-top: 5px;
+	height: 90%;
+	width: 95%;
 	object-fit: cover;
 	border-radius: 50%;
 	border: 3px solid #CCD6A6;
@@ -277,7 +279,7 @@ section{
 
 .role-p{
 	text-align: center;
-	font-size: 11px;
+	font-size: 12px;
 }
 
 .button{
@@ -359,10 +361,30 @@ section{
 		flex-direction: row;
 	}
 }
+
+/* Adjustments for screens that are smaller than 1400px x 843px */
+@media screen and (max-width: 1400px) {
+	.main-container {
+	  width: 100%;
+	  height: auto;
+	}
+  }
+  
+  /* Adjustments for screens that are smaller than 768px (mobile devices) */
+  @media screen and (max-width: 768px) {
+	.header {
+	  font-size: 24px;
+	}
+  
+	.tab-menu {
+	  font-size: 16px;
+	}
+  }
+	
 /*
 .github-acorn{
-	height: 200px;
-	width: 200px;
+	height: 50px;
+	width: 50px;
 	margin: 65px 10px 40px 10px;
 	position: fixed;
 	padding: 6px;
@@ -373,8 +395,8 @@ section{
 	color: #dbaf4f;
 	position: absolute;
 	left: 780px;
-	bottom: 680px;
-	font-size: 60px;
+	bottom: 10px;
+	font-size: 50px;
 	background: var(--second-color);
 	max-width: 800px;
 	padding: 3px;
@@ -391,17 +413,16 @@ section{
 
 .acorn{
 	position: absolute;
-	left: 768px;
-	bottom: 730px;
+	left: 765px;
+	bottom: 30px;
 	height: 96px;
 	width: 110px;
 	border-radius: 50%;
 	padding: 10px;
 }
-.acorn .acorn-img{
-	margin-top: 15px;
-	height: 85%;
-	width: 80%;
-}
 
+.acorn .acorn-img{
+	height: 73%;
+	width: 74%;
+}
 */
