@@ -246,8 +246,8 @@ section{
 
 .member{
 	position: relative;
-	height: 95px;
-	width: 90px;
+	height: 135px;
+	width: 95px;
 	border-radius: 50%;
 	padding: 5px;
 	
@@ -255,8 +255,8 @@ section{
 .member .card-img{
 	margin-left:60px;
 	margin-top: 5px;
-	height: 90%;
-	width: 95%;
+	height: 70%;
+	width: 98%;
 	object-fit: cover;
 	border-radius: 50%;
 	border: 3px solid #CCD6A6;
