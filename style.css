@@ -30,6 +30,14 @@ body{
 	overflow: hidden;
 }
 
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: scale(1.5);
+}
 section{
 	position: relative;
 	margin: 0 80px;
@@ -154,7 +162,23 @@ section{
 	border-bottom-right-radius: 30px;
 }
 
+.button-link{
+	color: #dbaf4f;
+	display:inline-block;
+	font-size: 26px;
+	margin: 1.5px 20px;
+	padding: 4px;
+	border-radius: 30px;
+	background: var(--second-color);
+	cursor: pointer;
+	user-select: none;
+	transition: 0.3s ease;
+	transition: right 0.3s ease-out;
+}
 
+.button-link a ion-icon {
+	color: var(--fifth-color);
+  }
 /*tab content*/
 
 .tab-content{
@@ -233,7 +257,7 @@ section{
 
 
 .team{
-	width: 160px;
+	width: 170px;
 	border-radius: 25px;
 	background-color: #CCD6A6;
 	position: relative;
@@ -255,14 +279,14 @@ section{
 .member{
 	position: relative;
 	height: 135px;
-	width: 95px;
+	width: 98px;
 	border-radius: 50%;
 	padding: 5px;
 	
 }
 .member .card-img{
-	margin-left:60px;
-	margin-top: 5px;
+	margin-left: 70px;
+	margin-top: 10px;
 	height: 70%;
 	width: 98%;
 	object-fit: cover;
@@ -296,13 +320,17 @@ section{
 	font-size: 12px;
 	color: var(--third-color);
 	padding: 6px 16px;
-	margin: 14px;
+	margin-top: 14px;
 	border-radius: 6px;
 	background: var(--first-color);
 	cursor: pointer;
 	user-select: none;
 	
 	transition: all 0.3s ease;
+}
+
+#b2{
+	margin-bottom: 10px;
 }
 
 .tab-menu.dragging .tab-button{
@@ -329,11 +357,12 @@ section{
 	}
 }
 
+
 .wrapper{
 	margin: 0 auto;
 	position: relative;
-	width: 70%;
-	height: 76vh;
+	width: 80%;
+	height: 74vh;
 	background: var(--first-color);
 	border: 4px solid rgba(255, 255, 255, .5);
 	border-radius: 20px;
@@ -341,12 +370,12 @@ section{
 	box-shadow: 0 0 30px rgba(0,0,0,0.5);
 	flex-direction: column;
 	overflow: hidden;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 .wrapper::-webkit-scrollbar {
 	width: 1px;
-	height: 100px;
+	height: auto;
 	position:absolute;
     right: 30px;
     bottom: 30px;
@@ -360,7 +389,7 @@ section{
 	background: transparent;
 	border-radius: 100px;
 	width: 1px;
-    height: 30px;
+    height: auto;
 
   }
 

@@ -81,7 +81,3 @@ tabBtns.forEach((tabBtn, i) => {
         IconVisibility();
     });
 });
-
-window.addEventListener("load", function() {
-    document.body.classList.add("loaded");
-});
