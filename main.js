@@ -81,3 +81,10 @@ tabBtns.forEach((tabBtn, i) => {
         IconVisibility();
     });
 });
+
+$(window).resize(function(){
+    var width = $(window).width();
+    var height = $(window).height();
+    $("iframe").attr("width", width);
+    $("iframe").attr("height", height);
+});
